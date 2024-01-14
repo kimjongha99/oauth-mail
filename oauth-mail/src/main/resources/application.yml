@@ -2,7 +2,7 @@ server:
   port: 4040
 spring:
   profiles:
-    active: db
+    active: db ,jwt
   datasource:
     driver-class-name: ${driver-class-name}
     url: ${url}
