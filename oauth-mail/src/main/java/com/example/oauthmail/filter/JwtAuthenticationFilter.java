@@ -68,10 +68,6 @@ public class JwtAuthenticationFilter  extends OncePerRequestFilter {
         }
         // 다음 filter로 넘어가도록 해줌
         filterChain.doFilter(request, response);
-
-
-
-
     }
     // request 객체로부터 token 꺼내오는 작업 //
     private String parseBearerToken(HttpServletRequest request) {
